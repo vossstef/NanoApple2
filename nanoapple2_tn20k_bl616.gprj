@@ -1,0 +1,90 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2AR-18C" pn="GW2AR-LV18QN88C8/I7">gw2ar18c-000</Device>
+    <FileList>
+        <File path="mockingboard/jt49/filter/jt49_dcrm.v" type="file.verilog" enable="1"/>
+        <File path="mockingboard/jt49/filter/jt49_dcrm2.v" type="file.verilog" enable="1"/>
+        <File path="mockingboard/jt49/filter/jt49_dly.v" type="file.verilog" enable="1"/>
+        <File path="mockingboard/jt49/filter/jt49_mave.v" type="file.verilog" enable="1"/>
+        <File path="mockingboard/jt49/jt49.v" type="file.verilog" enable="1"/>
+        <File path="mockingboard/jt49/jt49_bus.v" type="file.verilog" enable="1"/>
+        <File path="mockingboard/jt49/jt49_cen.v" type="file.verilog" enable="1"/>
+        <File path="mockingboard/jt49/jt49_div.v" type="file.verilog" enable="1"/>
+        <File path="mockingboard/jt49/jt49_eg.v" type="file.verilog" enable="1"/>
+        <File path="mockingboard/jt49/jt49_exp.v" type="file.verilog" enable="1"/>
+        <File path="mockingboard/jt49/jt49_noise.v" type="file.verilog" enable="1"/>
+        <File path="mouse/jt6805/jt6805.v" type="file.verilog" enable="1"/>
+        <File path="mouse/jt6805/jt6805_alu.v" type="file.verilog" enable="1"/>
+        <File path="mouse/jt6805/jt6805_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="mouse/jt6805/jt6805_regs.v" type="file.verilog" enable="1"/>
+        <File path="mouse/jt6805/jtframe_6805mcu.v" type="file.verilog" enable="1"/>
+        <File path="src/dualshock2.v" type="file.verilog" enable="1"/>
+        <File path="src/floppy_track.sv" type="file.verilog" enable="1"/>
+        <File path="src/gen_uart.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_dpb/gowin_dpb_trkbuf.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_dpb/sector_dpram.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_prom/gowin_prom_uc.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_sp/gowin_sp_128b.v" type="file.verilog" enable="1"/>
+        <File path="src/hdmi/audio_clock_regeneration_packet.sv" type="file.verilog" enable="1"/>
+        <File path="src/hdmi/audio_info_frame.sv" type="file.verilog" enable="1"/>
+        <File path="src/hdmi/audio_sample_packet.sv" type="file.verilog" enable="1"/>
+        <File path="src/hdmi/auxiliary_video_information_info_frame.sv" type="file.verilog" enable="1"/>
+        <File path="src/hdmi/hdmi.sv" type="file.verilog" enable="1"/>
+        <File path="src/hdmi/packet_assembler.sv" type="file.verilog" enable="1"/>
+        <File path="src/hdmi/packet_picker.sv" type="file.verilog" enable="1"/>
+        <File path="src/hdmi/serializer.sv" type="file.verilog" enable="1"/>
+        <File path="src/hdmi/source_product_description_info_frame.sv" type="file.verilog" enable="1"/>
+        <File path="src/hdmi/tmds_channel.sv" type="file.verilog" enable="1"/>
+        <File path="src/loader_sd_card.sv" type="file.verilog" enable="1"/>
+        <File path="src/misc/hid.v" type="file.verilog" enable="1"/>
+        <File path="src/misc/mcu_spi.v" type="file.verilog" enable="1"/>
+        <File path="src/misc/osd_u8g2.v" type="file.verilog" enable="1"/>
+        <File path="src/misc/scandoubler.v" type="file.verilog" enable="1"/>
+        <File path="src/misc/sd_card.v" type="file.verilog" enable="1"/>
+        <File path="src/misc/sd_rw.v" type="file.verilog" enable="1"/>
+        <File path="src/misc/sdcmd_ctrl.v" type="file.verilog" enable="1"/>
+        <File path="src/misc/sysctrl.v" type="file.verilog" enable="1"/>
+        <File path="src/misc/video.v" type="file.verilog" enable="1"/>
+        <File path="src/misc/video_analyzer.v" type="file.verilog" enable="1"/>
+        <File path="src/misc/ws2812.v" type="file.verilog" enable="1"/>
+        <File path="src/sdram_tn20k.sv" type="file.verilog" enable="1"/>
+        <File path="src/uart6551/io_fifo.v" type="file.verilog" enable="1"/>
+        <File path="src/uart6551/uart_6551.v" type="file.verilog" enable="1"/>
+        <File path="T65/T65.vhd" type="file.vhdl" enable="1"/>
+        <File path="T65/T65_ALU.vhd" type="file.vhdl" enable="1"/>
+        <File path="T65/T65_MCode.vhd" type="file.vhdl" enable="1"/>
+        <File path="T65/T65_Pack.vhd" type="file.vhdl" enable="1"/>
+        <File path="mockingboard/mockingboard.vhd" type="file.vhdl" enable="1"/>
+        <File path="mockingboard/via6522.vhd" type="file.vhdl" enable="1"/>
+        <File path="mouse/applemouse.vhd" type="file.vhdl" enable="1"/>
+        <File path="mouse/applemouse_mcu_rom.vhd" type="file.vhdl" enable="1"/>
+        <File path="mouse/applemouse_rom.vhd" type="file.vhdl" enable="1"/>
+        <File path="mouse/pia6821.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/CEGen.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/R65Cx2.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/apple2.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/disk_ii.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/disk_ii_rom.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/drive_ii.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/gowin_dpb/gowin_dpb_track_buffer_b.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/gowin_prom/gowin_prom_apple2.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/gowin_prom/gowin_prom_key.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/gowin_rpll/gowin_rpll_tn20k.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/gowin_sdpb/gowin_sdpb_8k.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/gowin_sdpb/gowin_sdpb_palette.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/hdd.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/hdd_rom.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/keyboard.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/ssc.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/ssc_rom.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/tang/nano20k_bl616/nanoapple2.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/timing_generator.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/vga_controller.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/video_generator.vhd" type="file.vhdl" enable="1"/>
+        <File path="src/tang/nano20k_bl616/nanoapple2.cst" type="file.cst" enable="1"/>
+        <File path="src/tang/nano20k_bl616/nanoapple2.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>

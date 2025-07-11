@@ -9,7 +9,11 @@ The Nano Apple IIe is a port of both [MiSTer](https://github.com/MiSTer-devel/Ap
 | [Tang Mega 60k NEO](https://wiki.sipeed.com/hardware/en/tang/tang-mega-60k/mega-60k.html)|[GW5AT-60](https://www.gowinsemi.com/en/product/detail/60/)| HDMI / LCD| |
 | [Tang Mega 138k Pro](https://wiki.sipeed.com/hardware/en/tang/tang-mega-138k/mega-138k-pro.html)|[GW5AST-138](https://www.gowinsemi.com/en/product/detail/60/) |HDMI / LCD| |
 
-This project relies on an external µC being connected to the Tang Nano 20K. You can use a [M0S Dock BL616](https://wiki.sipeed.com/hardware/en/maixzero/m0s/m0s.html), [Raspberry Pi Pico (W)](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html) or [esp32-s2](https://www.espressif.com/en/products/socs/esp32-s2)/[s3](https://www.espressif.com/en/products/socs/esp32-s3) and use the [FPGA companion firmware](http://github.com/harbaum/FPGA-Companion). Basically a µC acts as USB host for USB devices and as an OSD controller using a [SPI communication protocol](https://github.com/harbaum/FPGA-Companion/blob/main/SPI.md).
+This project relies on a µC being connected to the FPGA on the Tang Nano 20K. You can use the onboard BL616, [M0S Dock BL616](https://wiki.sipeed.com/hardware/en/maixzero/m0s/m0s.html), [Raspberry Pi Pico (W)](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html) or [esp32-s2](https://www.espressif.com/en/products/socs/esp32-s2)/[s3](https://www.espressif.com/en/products/socs/esp32-s3) and use the [FPGA companion firmware](http://github.com/harbaum/FPGA-Companion).  
+Basically the µC acts as USB host for USB devices and as an OSD controller using a [SPI communication protocol](https://github.com/harbaum/FPGA-Companion/blob/main/SPI.md).
+
+Onboard BL616 µC  
+* If you don't need the WIFI modem then even the onboard BL616 µC (normally used for bitstream programming) can be used. A dedicated FPGA bitstream and FPGA companion firmware is needed in that configuration.
 
 For the [M0S Dock (BL616 µC)](https://wiki.sipeed.com/hardware/en/maixzero/m0s/m0s.html) there is a:
 
@@ -57,7 +61,7 @@ Features:
 * SSC configuartion
 * Tape loading via the UART RX pin (ADT Pro)
 * Selectable mixed mode text color artifacts
-* FPGA Companion WIFI modem via SSC
+* FPGA Companion WIFI modem via SSC (M0S Dock or PiPico W)
 
 <img src="./.assets/apple2.png" alt="image" width="80%" height="auto">
 
